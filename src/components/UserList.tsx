@@ -15,7 +15,7 @@ export default function UserList() {
     <Container className="mt-3">
       <Row>
         <Col>
-          <h3 className="text-primary">User List</h3>
+          <h3>User List</h3>
           <p className="fst-italic">
             Lorem ipsum dolor sit amet, officia excepteur ex fugiat
             reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
@@ -47,12 +47,12 @@ export default function UserList() {
             <tbody>
               {state.users.map((user) => (
                 <tr key={user.id}>
-                  <th>{user.username}</th>
-                  <th>{user.name}</th>
-                  <th>{user.email}</th>
-                  <th>{user.website}</th>
-                  <th>{user.company.name}</th>
-                  <th>{user.address.city}</th>
+                  <td>{user.id}</td>
+                  <td>{user.name}</td>
+                  <td>{user.email}</td>
+                  <td>{user.website}</td>
+                  <td>{user.company.name}</td>
+                  <td>{user.address.city}</td>
                 </tr>
               ))}
             </tbody>
